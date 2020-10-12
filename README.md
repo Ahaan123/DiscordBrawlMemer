@@ -5,3 +5,5 @@ This Discord Bot shows you Brawl Stars Memes
 
 Commands | Purpose
 -------- | -------
+brawl meme | Displays a meme about Brawl Stars
+-----------| ---------------------------------
