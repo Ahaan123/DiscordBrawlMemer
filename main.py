@@ -5,7 +5,7 @@ import random
 import os
 from WebServer import keep_alive
 brawl_bot = commands.Bot(command_prefix='brawl ')
-TOKEN = os.environ.get('DISCORD_BRAWL_TOKEN')
+TOKEN = 'YOUR DISCORD BOT TOKEN'
 class meme_post:
   url = ''
   title = ''
@@ -20,6 +20,11 @@ class meme_post:
 async def on_ready():
     print('Brawl Memer bot be ready though')
 
+client_id = 'YOUR_CLIENT ID'
+client_secret = 'YOUR CLIENT SECRET'
+user_agent = 'YOUR USER AGENT'
+username = 'YOUR USERNAME'
+password = 'YOUR PASSWORD'
 reddit = praw.Reddit(client_id = client_id, client_secret=client_secret, user_agent=user_agent, username=username, password=password)
 subred = reddit.subreddit('brawlstars')
 
