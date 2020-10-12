@@ -1,4 +1,4 @@
 # DiscordBrawlMemer
 This Discord Bot shows you Brawl Stars Memes
 
-**BrawlMemer|Commands**
+<h1>BrawlMemer|Commands</h1>
