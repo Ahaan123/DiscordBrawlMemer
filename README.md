@@ -13,4 +13,8 @@ This Discord Bot shows you Brawl Stars Memes
 | brawl help      | Shows a command list for BrawlMemer     |
 | brawl info      | Shows info about the Bot                |
 
+<h2>BrawlMemer | Developer</h2>
+
+`Ahaan Pandya`
+
 **This material is unofficial and is not endorsed by Supercell. For more information see Supercell's Fan Content Policy: www.supercell.com/fan-content-policy.**
