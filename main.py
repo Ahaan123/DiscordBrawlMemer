@@ -5,7 +5,7 @@ import random
 import os
 from WebServer import keep_alive
 brawl_bot = commands.Bot(command_prefix='brawl ')
-TOKEN = 'YOUR DISCORD BOT TOKEN'
+TOKEN = "TOKEN IS HIDDEN"
 class meme_post:
   url = ''
   title = ''
@@ -20,14 +20,14 @@ class meme_post:
 async def on_ready():
     print('Brawl Memer bot be ready though')
 
-client_id = 'YOUR_CLIENT ID'
-client_secret = 'YOUR CLIENT SECRET'
-user_agent = 'YOUR USER AGENT'
-username = 'YOUR USERNAME'
-password = 'YOUR PASSWORD'
+client_id = '-a3rFPB9I37hbw'
+client_secret = 'ghA0sWj50nO50FQe4z5hMvFYwFY'
+user_agent = 'BrawlMemer'
+username = 'BearNo21'
+password = 'Prince#2.0'
 reddit = praw.Reddit(client_id = client_id, client_secret=client_secret, user_agent=user_agent, username=username, password=password)
 subred = reddit.subreddit('brawlstars')
-
+brawl_bot.remove_command('help')
 @brawl_bot.command()
 async def meme(ctx):
     posts = get_memes()
@@ -73,7 +73,31 @@ def get_video_memes():
 
 @brawl_bot.command()
 async def info(ctx):
-    await ctx.send("Hi there! I am a brawl Memer by Ahaan and I can show you a meme if you type brawl meme. Thanks!")
+    embed = discord.Embed(
+      colour=0xf1c40f,
+      title = "**BrawlMemer | Info**"
+    )
+    embed.add_field(name="**BrawlMemer | Version**", value="v1.1", inline=False)
+    embed.add_field(name="**BrawlMemer | Developer**", value="Ahaan Pandya", inline=False)
+    embed.add_field(name="**Disclaimer**", value="This material is unofficial and is not endorsed by Supercell. For more information see Supercell's Fan Content Policy: www.supercell.com/fan-content-policy.")
+    await ctx.send(embed=embed)
 
+@brawl_bot.command()
+async def help(ctx):
+  auth = ctx.message.author
+  embed = discord.Embed(
+    title='**COMMANDS HELP**',
+    colour = 0xf1c40f
+  )
+  embed.add_field(name="**brawl meme**", value="Displays a Brawl Stars meme (image)")
+  embed.add_field(name="**brawl videomeme**", value="Displays a Brawl Stars meme (video)")
+  embed.add_field(name="**brawl info**", value="Shows you information about the Bot")
+  embed.add_field(name="**brawl help**", value="Gives Command Help")
+  new_embed = discord.Embed(
+    colour = 0xf1c40f,
+    description = "**A DM containing the help message has been sent to you!**"
+  )
+  await ctx.send(embed=new_embed)
+  await auth.send(embed=embed)
 keep_alive()
 brawl_bot.run(TOKEN)
