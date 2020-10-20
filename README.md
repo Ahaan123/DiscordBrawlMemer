@@ -2,7 +2,10 @@
 This Discord Bot shows you Brawl Stars Memes
 <h2>BrawlMemer | Version</h2>
 
-```v1.0```
+```v1.1```
+
+<h2>What's New</h2>
+BrawlMemer's message design has been made much more prettier!
 
 <h2>BrawlMemer | Commands</h2>
 
