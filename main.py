@@ -89,10 +89,11 @@ async def help(ctx):
     title='**COMMANDS HELP**',
     colour = 0xf1c40f
   )
-  embed.add_field(name="**brawl meme**", value="Displays a Brawl Stars meme (image)")
-  embed.add_field(name="**brawl videomeme**", value="Displays a Brawl Stars meme (video)")
-  embed.add_field(name="**brawl info**", value="Shows you information about the Bot")
-  embed.add_field(name="**brawl help**", value="Gives Command Help")
+  embed.add_field(name=":laughing:`brawl meme`", value="Displays a Brawl Stars meme (image)")
+  embed.add_field(name=":video_camera:`brawl videomeme`", value="Displays a Brawl Stars meme (video)")
+  embed.add_field(name=":information_source:`brawl info`", value="Shows you information about the Bot")
+  embed.add_field(name=":question:`brawl help`", value="Gives Command Help")
+  embed.add_thumbnail(url='https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Brawl_Stars_logo.png/220px-Brawl_Stars_logo.png')
   new_embed = discord.Embed(
     colour = 0xf1c40f,
     description = "**A DM containing the help message has been sent to you!**"
